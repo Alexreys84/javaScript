@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "tutorial JavaScript",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexreys84/javaScript.git"
+  },
+  "author": "Alex dos Reis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexreys84/javaScript/issues"
+  },
+  "homepage": "https://github.com/Alexreys84/javaScript#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}

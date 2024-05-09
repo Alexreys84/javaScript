@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./calculadora.png">
+</head>
+<body>
+    <div class="container">
+        <img src="./img/calc.png">     
+        <h1>Calculadora de Média dos Alunos</h1>
+        <div>
+            <label for="primeiranota">Nota1</label>
+            <input type="number" placeholder = "Nota1"  name = " " id="primeiranota">
+        </div>
+        <div>
+            <label for="segundanota">Nota2</label>
+            <input type="number" placeholder = "Nota2"  name = " " id="segundanota">
+        </div>
+        <div>
+            <label for="terceiranota">Nota4</label>
+            <input type="number"placeholder = "Nota3"  name = " "  id="terceiranota">
+        </div>
+        <div>
+            <label for="quartanota">Nota4</label>
+            <input type="number" placeholder = "Nota4"  name = " " id="quartanota">
+        </div>
+        <button onclick="calcularMedia()">Calcular a Média</button>
+        <div id="resultado"></div>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>

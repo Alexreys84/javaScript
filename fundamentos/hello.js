@@ -3,9 +3,11 @@
  * Sintaxe Básica da Linguagem JavaScript
  * @author Alex dos Reis 
  */
+// importação de pacotes
+const colors = require('colors')
 
 // sentenças
-console.log("Hello, World!\n")
+console.log("Hello, World!\n".green)
 
 // Blocos
 {
