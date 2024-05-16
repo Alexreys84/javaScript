@@ -1,69 +1,170 @@
-Aula 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Na linguagem JS o ; é opicional
-Podemos usar "" ou '' só não podemos misturar "'
-console.log //escrever no terminal
-console.clear() // limpar a tela do terminal
-Dica: "" Textos '' Importações
-
-Nas estruturas de controle condicional e nos laços de 
-repetições podemos omitir as chaves, porém só uma linha de
-código é vinculada
-Dica: Não omitir as chaves
-
-Variáveis na linguagem JS são dinamicamente tipadas
-somente temos 3 tipos (string, number e boolean)
-Para declarar uma constante ou variável podemos usar:
-const, var e let
-var (obsoleto - não usar, pois pode gerar BUG no projeto)
-
+Aula 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+Na linguagem JS o ; (ponto e vírgula) é opcional.
+Pode-se utilizar "" ou '' só não pode combiná-los.
+Dica: "" para textos e '' para importações.
+ 
+Nas estruturas de controle condicional e nos laços de repetições pode-se omitir as chaves, porém só uma linha de código será vinculada.
+ 
+Variáveis na linguagem JS são dinamicamente tipadas e somente 3 tipos: (string, number e boolean) 
+Para declarar uma constante ou variável podemos usar: const, var, let
+var É OBSOLETO (!NÃO UTILIZAR!)
+ 
+Sintaxe JS:
+    console.log // printar no terminal
+    console.clear() // limpar o terminal
+ 
 Strings:
-.replace(",",".") //substitui um caractere por outro
-
-Concatenação (unir texto com conteúdo de variáveis)
-
-aula 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-ATENÇÃO A REGRA DE PREFERENCIA 
-1º parênteses
-2º multiplicação
-3º divisão
-4º soma
-5º subtração
-comparadores:
-Obiservação importante :
-nao usar os comparadores == !=(risco devido de tipagem dinâmica)
-_--------------------------------------------------------
+    .replace (",",".") // substitui um caractere por outro
+ 
+Concatenação // unir texto com conteúdo de variáveis:
+    + // Evitar o uso devido a tipagem dinâmica
+    `${}` // Mais usado na linguagem JS
+ 
+Numbers:
+Number // converte para o tipo numérico
+Number.isInteger // Verifica se o número é inteiro
+.toFixed(x) // Formatar número de acordo com a quantidade de casas decimais
+ 
+Booleans:
+ 
+Aula 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Operadores aritméticos
+ 
+ATENÇÃO A REGRA DE PRECEDÊNCIA
+1º) parênteses
+2º) multiplicação
+3º) divisão
+4º) soma
+5º) subtração
+ 
+Comparadores:
+Observação importante:
+não usar os comparadores == != (riscos devido a tipagem dinâmica)
+ 
+------------------------------------
 NPM (node package manager)
-gerenciador de pacotes  node (pacotes com funcionalidade que podem se adicionados ao node )
-para gerenciar (versao,atualização, etc.) os pacotes node, é necessario configurar o package.json
-
-json(javasript obobject notation)
+gerenciador de pacotes node (pacotes com funcionalidades que podem ser adicionadas ao node)
+para gerenciar(versão, atualizações etc.) os pacotes node, é necessário configurar o package.json
+ 
+json(JavaScript object notation)
 npm -version
-npm ls (lista de pacotes)
+npm ls (listar pacotes instalado)
 npm i (instalar um pacote)
 npm r (remover um pacote)
-
-Observação
-os pacotes sao intalados no projeto (raiz)
-passo 1 - criar o acrquivo package.json
+ 
+Observação: os pacotes são instalados no projeto(raiz)
+ 
+passo 1 - criar o arquivo package.json
 npm init
-
-repositorio de pacotes:
+ 
+repositório de pacotes
 https://www.npmjs.com/
-
+ 
 Exercício:
-criar no console js um app para calcular a porcentagem,
-usando  regra de 3 conforme modelo 
-10% de 200 =20
-200-------------100%
-
-         x
-valor-----------10%
+Criar no console JS um app para calcular a porcentagem,
+usando regra de 3, conforme modelo:
+ 
+10% de 200 = 20
+X       Y    valor
+ 
+200 --------------------- 100%
+            \   /
+              X
+            /   \
+valor ------------------- 10%
+ 
 valor x 100 = 200 x 10
-
-
-variáveis:
-3 variáveis:x y valor
-Entrada:x,y
-
+valor x 100 = 2000
+ 
+            2000
+valor = ------------
+            100
+ 
+        20
+valor = --
+         1
+ 
+valor = 20
+ 
+Variáveis;
+3 Variáveis: x y valor
+ 
+Entrada: 
+x , Y
+ 
 processamento:
-valor = (x)
+valor = (x * y) / 100
+ 
+Saída:
+valor
+ 
+----------------------------------------------
+Funções:
+Função é um bloco de código reutilizável
+Função Simples:
+ 
+function nome() {   
+    return
+}
+ 
+Funções anônimas
+const nome = function () {
+ 
+}
+ 
+let nome = function () {
+}
+ 
+Funções em JavaScript moderno pode ser simplificadas
+ 
+_______________________________________________________
+obs:
+typeof //verifica a tipagem dinâmica
+primitivos (string, number e boolean)
+function
+object
+ 
+_______________________________________________________
+POO -  Programação Orientada a Objetos
+Pilares: 
+- Abstração
+- Herança
+- Polimorfiamo
+- Encapsulamento (Segurança)
+ 
+Toda Classe modelo inicia com a letra maiúscula
+ 
+new(IMPORTANTE!) indica a criação de um Objetos
+this(IMPORTANTE) quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo é a mudança do compotamento de um método mais existente. 
+*** Atenção O pormorfismo não cria o método, ele apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do método da classe pai.
+ 
+DICA:
+class Classe {} //cria uma classe modelo
+- o nome da classe sempre deve começar com uma letra maiúscula
+- Classe(biologia)
+- objeto (new) (Substantivo)
+- atributos (variáveis) (adjetivos)
+- ações(metodos/funções) (verbos)
+ 
+Encapsulamento
+1) proteger a variável criando um modificador privado (acesso exclusivo da calsse ao qual pertence)
+2) Criar uma função para obter o conteúdo da variável (get)
+3) Criar uma função para gravar um dado na variável (set)
+ 
+no JavaScript usamos _ antes da variável para encapsular
+-----------------------------------------------------------------------------------------------------------
+no JavaScript objetos podem ser criados sem uma classe modelo 
+estrutura de dados usando objetos
+exemplo:
+package.json
+coleção de bancos de dados (mongo db)
+ATENÇÃO !!
+tipo de javaSript
+-string
+-number
+-boolean
+-function
+-object

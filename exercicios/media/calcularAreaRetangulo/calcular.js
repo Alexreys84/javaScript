@@ -6,8 +6,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     let baseInput = document.getElementById("base")
     let alturaInput = document.getElementById("altura")
-    let btnCalcular = document.getElementById("btnCalcular")
-    let areaResultado = document.getElementById("areaResultado")
+    let btnCalcular = document.getElementById("Calcular")
+    let areaResultado = document.getElementById("Resultado")
 
     btnCalcular.addEventListener("click", function() {
         let base = Number(baseInput.value)
