@@ -29,8 +29,9 @@ input[type="button"] {
 }
 
 /* Estilos responsivos */
-    @media  (min-width: 576px),(max-width: 600px) {
+    @media (max-width: 600px) {
     .container {
         max-width: 100%;
+        text-align: center;
     }
 }
