@@ -1,6 +1,6 @@
 /**
  * JS - PDV
- * @author Miqueias Rodrigues
+ * @author Alex Reis
  */
 
 function calcular() {
