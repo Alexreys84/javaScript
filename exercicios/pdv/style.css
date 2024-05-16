@@ -29,7 +29,7 @@ input[type="button"] {
 }
 
 /* Estilos responsivos */
-@media only screen and (max-width: 600px) {
+    @media  (min-width: 576px),(max-width: 600px) {
     .container {
         max-width: 100%;
     }
