@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Retângulo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Retângulo</h1>
+        <img src="img/retangulo.png" alt="Status" id="imgStatus">
+        <form id="frmCalculo" class="flex">
+            <input type="number" id="base" name="base" placeholder="Base do Retângulo" class="caixa">
+            <input type="number" id="altura" name="altura" placeholder="Altura do Retângulo" class="caixa">
+            <input type="button" id="btnCalcular" value="Calcular Área">
+        </form>
+    </div>
+    <div id="resultado">
+        <h2>Área do Retângulo:</h2>
+        <p id="areaResultado"></p>
+    </div>
+
+    <script src="calcular.js"></script>
+</body>
+
+</html>
