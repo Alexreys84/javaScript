@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc; /* Adiciona uma borda sólida de 2px */
+    box-sizing: border-box; /* Inclui a borda no cálculo do tamanho total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/calc.png');
+}
+
+h1 {
+    text-align: center;
+    color:yellowgreen;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 105%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#calculate-btn {
+    margin-right: 5px;
+}
+
+#calculate-btn,
+#clear-btn {
+    width: calc(50% - 5px);
+}
+
+.form-group button {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 100%;
+        float: none;
+        color: yellowgreen;
+    }
+
+    #calculate-btn {
+        margin-right: 0;
+    }
+}

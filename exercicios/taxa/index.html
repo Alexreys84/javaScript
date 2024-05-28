@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxa de Juros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Taxa de Juros</h1>
+        <div id="calculator-form">
+            <div class="form-group">
+                <label for="amount">Valor Total do Veículo:</label>
+                <input type="text" id="amount" placeholder="Digite o valor total">
+            </div>
+            <div class="form-group">
+                <label for="entry">Valor da Entrada:</label>
+                <input type="text" id="entry" placeholder="Digite o valor da entrada">
+            </div>
+            <div class="form-group">
+                <label for="months">Número de Parcelas:</label>
+                <input type="text" id="months" placeholder="Digite o número de parcelas">
+            </div>
+            <div class="form-group">
+                <label for="installment">Valor da Parcela:</label>
+                <input type="text" id="installment" placeholder="Digite o valor da parcela">
+            </div>
+            <div class="form-group">
+                <button type="button" id="calculate-btn">Calcular</button>
+                <button type="button" id="clear-btn">Limpar</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
